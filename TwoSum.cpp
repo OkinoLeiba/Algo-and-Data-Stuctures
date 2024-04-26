@@ -1,6 +1,8 @@
-class TwoSum {
+using namespace std::vector;
+
+class TwoSum{
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
+    vector<int> twoSumFunc(std::vector<int>& nums, int target) {
         int narray[2];
         
         for (int i = 0; i <= nums.size()-1; i++) {
@@ -17,7 +19,7 @@ public:
 
 class TwoSum_Hash {
     public:
-        vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> twoSum(std::vector<int>& nums, int target) {
         int n = nums.size();
 
         for (int i = 0; i <= nums.size()-1; i++) {
@@ -34,4 +36,12 @@ class TwoSum_Hash {
 };
 
 
+
+int main() {
+
+    TwoSum twoSum;
+
+    twoSum.twoSumFunc([4,6,4,7], 10);
+
+};
 
